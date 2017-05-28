@@ -83,6 +83,22 @@ namespace bejeweled {
 
 		return effect;
 	}
+
+	ResourcesManager::ResourcesManager(const ResourcesManager& other) {
+		this->operator=(other);
+	}
+
+	ResourcesManager& ResourcesManager::operator = (const ResourcesManager& other) {
+		if (this != &other) {
+			m_surfaces = other.m_surfaces;
+			m_fonts = other.m_fonts;
+			m_musics = other.m_musics;
+			m_effects = other.m_effects;
+		}
+
+		return *this;
+	}
+
 }
 
 

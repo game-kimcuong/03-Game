@@ -62,7 +62,7 @@ namespace bejeweled {
 		/// Ngan chan sao chep va Assigment
 		ResourcesManager(const ResourcesManager&);
 		ResourcesManager& operator = (const ResourcesManager&);
-
+	private:
 		vector<SDL_Surface*> m_surfaces;
 		vector<TTF_Font*> m_fonts;
 		vector<Mix_Music*> m_musics;

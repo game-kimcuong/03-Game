@@ -78,8 +78,7 @@ namespace bejeweled {
 	}
 
 	SurfaceProxy& SurfaceProxy::operator=(const SurfaceProxy& surfaceProxy) {
-		SurfaceProxy m_surfaceProxy = surfaceProxy;
-		 return m_surfaceProxy;
+		return *this;
 	}
 
 	SurfaceProxy::~SurfaceProxy(void)
